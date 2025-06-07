@@ -93,11 +93,11 @@ python manage.py runserver
 
     payload
 
-    {
-     "Fitness class": "Zumba",
-     "date time": "23/06/2025 06:30 AM",
-     "Instructor": "John Doe",
-     "Available slots": 20
+   { 
+      "Fitness class": "Zumba",
+      "date time": "23/06/2025 06:30 AM",
+      "Instructor": "John Doe",
+      "Available slots": 20
    }
 
 it will create fitness classes
@@ -107,7 +107,17 @@ This is the get method whatever the classes we created we can see that classes u
     this is the route for Lists upcoming classes with name,time,instructor, and slots.
 
 OUTPUT:
+
 [
+    {
+        "id": 6,
+        "name": "",
+        "datetime": "06/07/2025 06:30 AM",
+        "instructor": "",
+        "available_slots": 0,
+        "is_upcoming": true
+    },
+    
     {
         "id": 19,
         "name": "Zumba",
@@ -133,6 +143,7 @@ OUTPUT:
         "is_upcoming": true
     }
 ]
+    
 
 3. book/
 This is the post method to book the classes which are available if the slots are not available that class data
