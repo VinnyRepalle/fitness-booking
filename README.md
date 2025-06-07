@@ -107,9 +107,7 @@ This is the get method whatever the classes we created we can see that classes u
     this is the route for Lists upcoming classes with name,time,instructor, and slots.
 
 OUTPUT:
-
 [
-   
     {
         "id": 19,
         "name": "Zumba",
@@ -152,8 +150,6 @@ it will return the data for the particular email how many classes that user want
 
 OUTPUT:
 [
-    
-    
     {
         "id": 18,
         "fitness_class_display": "Zumba - 14/06/2025 01:00 AM",
