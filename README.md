@@ -117,7 +117,6 @@ OUTPUT:
         "available_slots": 0,
         "is_upcoming": true
     },
-    
     {
         "id": 19,
         "name": "Zumba",
@@ -143,6 +142,7 @@ OUTPUT:
         "is_upcoming": true
     }
 ]
+
     
 
 3. book/
@@ -160,6 +160,7 @@ it will return the data for the particular email how many classes that user want
     http://127.0.0.1:8000/bookings/?email=vineetha123@gmail.com
 
 OUTPUT:
+
 [
     {
         "id": 18,
@@ -180,3 +181,6 @@ OUTPUT:
         "client_email": "vineetha123@gmail.com"
     }
 ]
+
+
+++++++++++++++++++++++ END +++++++++++++++++++++++++++++++++++
