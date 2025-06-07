@@ -68,14 +68,14 @@ Steps:
 
 
 PROJECT STRUCTURE
-============================================================================================
-Route                      ==                         Description
-=============================================================================================
-create/classes/           ==    This route is for creating fitness class.
-classes/                  ==    Lists upcoming classes with name,time,instructor,and slots.
-book/                     ==     Books a class if slots available then reduces slot count.
-bookings/?email=example@gmail.com/ ==  Returns all bookings made by a specfic email address.
-================================================================================================
+
+| Route                                      | Description                                                   |
+|-------------------------------------------|---------------------------------------------------------------|
+| create/classes/                        | This route is for creating a fitness class.                   |
+| classes/                                | Lists upcoming classes with name, time, instructor, and slots.|
+| book/                                   | Books a class if slots are available, then reduces slot count.|
+| bookings/?email=example@gmail.com       | Returns all bookings made by a specific email address.        |
+
 
 
 USE 
@@ -94,11 +94,11 @@ python manage.py runserver
     payload
 
     {
-        "Fitness class": "Zumba",
-        "date time": "09/06/2025 06:30 AM",
-        "Instructor": "John Doe",
-        "Available slots": 20
-    }
+     "Fitness class": "Zumba",
+     "date time": "23/06/2025 06:30 AM",
+     "Instructor": "John Doe",
+     "Available slots": 20
+   }
 
 it will create fitness classes
 
@@ -109,50 +109,27 @@ This is the get method whatever the classes we created we can see that classes u
 OUTPUT:
 
 [
+   
     {
-        "id": 6,
-        "name": "",
-        "datetime": "06/07/2025 06:30 AM",
-        "instructor": "",
-        "available_slots": 0,
-        "is_upcoming": true
-    },
-    {
-        "id": 7,
-        "name": "",
-        "datetime": "06/07/2025 06:30 AM",
-        "instructor": "",
-        "available_slots": 0,
-        "is_upcoming": true
-    },
-    {
-        "id": 11,
+        "id": 19,
         "name": "Zumba",
-        "datetime": "07/06/2025 06:30 AM",
+        "datetime": "14/06/2025 06:30 AM",
         "instructor": "John Doe",
-        "available_slots": 18,
+        "available_slots": 19,
         "is_upcoming": true
     },
     {
-        "id": 12,
+        "id": 20,
         "name": "Zumba",
-        "datetime": "08/06/2025 06:30 AM",
+        "datetime": "15/06/2025 06:30 AM",
         "instructor": "John Doe",
-        "available_slots": 18,
+        "available_slots": 19,
         "is_upcoming": true
     },
     {
-        "id": 13,
+        "id": 21,
         "name": "Zumba",
-        "datetime": "08/06/2025 06:30 AM",
-        "instructor": "John Doe",
-        "available_slots": 20,
-        "is_upcoming": true
-    },
-    {
-        "id": 14,
-        "name": "Zumba",
-        "datetime": "09/06/2025 06:30 AM",
+        "datetime": "23/06/2025 06:30 AM",
         "instructor": "John Doe",
         "available_slots": 20,
         "is_upcoming": true
@@ -175,9 +152,23 @@ it will return the data for the particular email how many classes that user want
 
 OUTPUT:
 [
+    
+    
     {
-        "id": 13,
-        "fitness_class_display": "Zumba - 09/06/2025 01:00 AM",
+        "id": 18,
+        "fitness_class_display": "Zumba - 14/06/2025 01:00 AM",
+        "client_name": "vinny",
+        "client_email": "vineetha123@gmail.com"
+    },
+    {
+        "id": 19,
+        "fitness_class_display": "Zumba - 15/06/2025 01:00 AM",
+        "client_name": "vinny",
+        "client_email": "vineetha123@gmail.com"
+    },
+    {
+        "id": 20,
+        "fitness_class_display": "Zumba - 23/06/2025 01:00 AM",
         "client_name": "vinny",
         "client_email": "vineetha123@gmail.com"
     }
